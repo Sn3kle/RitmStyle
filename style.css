@@ -1,0 +1,544 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    background-color: #162831;
+    font-size: 14px;
+    color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+p {
+    margin: 0 0 10px;
+}
+
+*,
+*:before,
+*:after{
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/*=======Decor=====*/
+
+.decorw {
+    position: relative;
+}
+
+.decorw::after {
+    content: url(img/acvatp/acva-right.png);
+    position: absolute;
+    right: -60px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.decorw::before {
+    content: url(img/acvatp/acva-left.png);
+    position: absolute;
+    left: -60px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.decor-wrapper {
+    text-align: center;
+}
+
+.decor {
+    display: inline-block;
+    position: relative;
+}
+
+.decor::after,
+.decor::before {
+    width: 28px;
+    height: 28px;
+}
+
+.decor::after {
+    content: "";
+    background: url(img/acvatp/blue-right.png) no-repeat;
+    position: absolute;
+    right: -60px;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+
+.decor::before {
+    content: "";
+    background: url(img/acvatp/blue-left.png) no-repeat;
+    position: absolute;
+    left: -60px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.alltitle {
+    font-family: 'El Messiri', sans-serif;
+    font-size: 42px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 110px;
+}
+
+
+/*=======Header=====*/
+
+.header {
+    width: 100%;
+    height: 100px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+}
+
+.nav {
+    display: flex;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.nav__link {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 45px;
+    line-height: 1.2;
+    opacity: .75;
+    transition: opacity .1s linear;
+}
+
+.nav__link:hover {
+    opacity: 1;
+}
+
+.btn {
+    display: inline-block;
+
+    border-radius: 2px;
+    border: 0;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 9px 15px;
+
+}
+
+.btn--blue {
+    background-color: #018ABE;
+}
+
+/*=======Acva=====*/
+
+.acva {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 600px;
+    margin-top: 140px;
+    z-index: 1;
+}
+
+.acva__item {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+}
+
+.acva__item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(152, 201, 220, 0.5);
+    opacity: 0;
+    transition: opacity .2s ease;
+    border-radius: 10px;
+}
+
+.acva__item:hover::before {
+    opacity: 1;
+}
+
+.acva__img {
+    max-width: 1269.980px;
+
+}
+
+.acva__title {
+    position: absolute;
+    font-family: 'El Messiri', sans-serif;
+    font-size: 24px;
+    color: #fff;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-top: 150px;
+
+
+}
+
+
+.acva__text {
+    position: absolute;
+    font-family: 'El Messiri', sans-serif;
+    font-size: 64px;
+    color: #fff;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-top: 220px;
+}
+
+/*=======Service=====*/
+
+.service {
+    margin-top: 150px;
+}
+
+
+.service__text {
+    position: absolute;
+    font-family: 'El Messiri', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #fff;
+    left: 20px;
+    bottom: 20px;
+}
+
+.service__link {
+    position: relative;
+}
+
+.service__content {
+    display: flex;
+    width: 100%;
+    grid-gap: 20px;
+}
+
+.service__content2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+
+
+.service__link::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(1, 138, 190, 0.5);
+    opacity: 0;
+    transition: opacity .2s linear;
+    border-radius: 10px;
+}
+
+.service__link:hover::before  {
+    opacity: 1;
+}
+
+.service__border {
+    position: absolute;
+    border-bottom: 7px #018ABE solid;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 3px;
+    border-radius: 10px;
+}
+
+/*=======Reviews=====*/
+
+.reviews {
+    margin-top: 150px;
+}
+
+.reviews__item {
+
+}
+
+.reviews__box{
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+    border: 1px solid #018ABE;
+    box-sizing: border-box;
+    height: 350px;
+    width: 636px;
+    background-color: #018ABE;
+    border-radius: 10px;
+    margin: 0 10px;
+    padding: 0 60px;
+}
+
+.reviws__name {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+    padding-top: 45px;
+    padding-bottom: 20px;
+}
+
+.reviws__text {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+/*=======Reviws-Slider=====*/
+
+.slick-dots {
+    bottom: -50px;
+}
+
+
+.slick-dots li button {
+    background: #8E8E8E;
+    opacity: .50;
+
+}
+
+.slick-dots li button:before {
+    color: #8E8E8E;
+    opacity: .50;
+}
+
+.slick-dots li.slick-active button:before {
+    opacity: 1;
+    color: #fff;
+    background: #fff;
+}
+
+
+
+/*=======Info=====*/
+
+.info {
+    margin-top: 150px;
+}
+
+
+
+.info__item {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.info__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+    padding-left: 50px;
+    margin-bottom: 100px;
+}
+
+.info__servis {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 30px;
+}
+
+.info__text {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+
+    line-height: 1.5;
+}
+
+.info__photo {
+    width: 40%;
+    padding-left: 100px;
+    margin-bottom: 100px;
+}
+
+.info__photo2 {
+    width: 40%;
+    padding-left: 50px;
+}
+
+.info__content2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+    padding-left: 140px;
+}
+
+/*=======Price=====*/
+
+.price {
+    margin-top: 150px;
+}
+
+.price__item {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.price__text {
+    position: relative;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.2;
+    padding-left: 90px;
+    padding-top: 100px;
+}
+
+.price__sum {
+    font-family: 'El Messiri', sans-serif;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.price__photo {
+    padding-left: 180px;
+}
+
+.price__name::before {
+    content: url(img/acvatp/left-small.png);
+    position: absolute;
+    left: 40px;
+}
+
+.price__photoname {
+    font-family: 'El Messiri', sans-serif;
+    color: #fff;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: center;
+    padding-top: 25px;
+}
+
+/*=======Contacts=====*/
+
+#contacts__map {
+    height: auto;
+    width: 100%;
+}
+
+.contacts {
+    display: flex;
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+
+.contacts__item {
+    display: flex;
+    width: 100%;
+}
+
+.contacts__box {
+    margin-left: 40px;
+    border: 1px solid #018ABE;
+    box-sizing: border-box;
+    height: 290px;
+    width: 392px;
+    background-color: #018ABE;
+    border-radius: 10px;
+    padding: 0 40px;
+}
+
+.contacts__name {
+    font-family: 'El Messiri', sans-serif;
+    font-size: 24px;
+    color: #fff;
+    font-weight: 700;
+    line-height: 1.4;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.contacts__text {
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 1.2;
+    padding-bottom: 20px;
+}
+
+.contacts__adres::before {
+    content: url(img/acvatp/mark.png);
+    padding-right: 20px;
+}
+
+.contacts__metro::before {
+    content: url(img/acvatp/metro.png);
+    padding-right: 20px;
+}
+
+.contacts__date::before {
+    content: url(img/acvatp/date.png);
+    padding-right: 20px;
+}
+
+.contacts__btn {
+    color: #018ABE;
+    display: inline-block;
+    background-color: #fff;
+    border-radius: 2px;
+    border: 0;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 9px 15px;
+    margin-top: 20px;
+}
+
+.contacts__content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.cnt_box {
+    margin-top: 25px;
+}
+
+
+
+
+
+

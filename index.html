@@ -1,0 +1,217 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@700&family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="libs/slick-1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="libs/slick-1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+          integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+          crossorigin=""/>
+    <link rel="stylesheet" href="style.css">
+    <title>RitmStyle</title>
+</head>
+<body>
+
+<!--Header-->
+<header class="header">
+    <div class="container">
+        <div class="header__inner">
+            <div class="header__logo">
+                <img src="img/logo.png">
+            </div>
+            <nav class="nav">
+                <a class="nav__link" href="#home">Главная</a>
+                <a class="nav__link" href="#service">Сеансы</a>
+                <a class="nav__link" href="#reviews">Отзывы</a>
+                <a class="nav__link" href="#contacts">Контакты</a>
+                <a class="nav__link" href="#">Новости</a>
+                <a class="nav__link" href="#">Обо мне</a>
+                <a class="nav__link" href="#">Блог</a>
+            </nav>
+            <a class="btn nav__link btn--blue" href="#">Записаться на сеанс</a>
+        </div>
+    </div>
+</header>
+
+<!--Acva-->
+<div id="home" class="acva">
+    <div class="container">
+        <div class="acva__item">
+            <div class="acva__title decorw">Укрепление здоровья</div>
+            <h1 class="acva__text">Акватерапия <br> RitmStyle</h1>
+            <img class="acva__img" src="img/acvatp/acva.png">
+        </div>
+    </div>
+</div>
+
+<!--Services-->
+<div id="service" class="service">
+    <div class="container">
+        <div class="service__item">
+            <div class="alltitle">
+                <h2 class="decor">Сеансы RitmStyle</h2>
+            </div>
+            <div class="service__content">
+                <a href="#" class="service__link">
+                    <div class="service__text">Стандартный RitmStyle</div>
+                    <img class="" src="img/acvatp/service-1.png">
+                    <div class="service__border"></div>
+                </a>
+                <div class="service__content2">
+                    <a href="#" class="service__link">
+                        <div class="service__text ">RitmStyle для пар</div>
+                        <img class="" src="img/acvatp/service-2.png">
+                    </a>
+                    <a href="#" class="service__link">
+                        <div class="service__text ">RitmStyle с полным <br> погружением под воду</div>
+                        <img class="" src="img/acvatp/service-2.png">
+                    </a>
+                    <a href="#" class="service__link service__link2">
+                        <div class="service__text ">RitmStyle для беременных</div>
+                        <img class="" src="img/acvatp/service-2.png">
+                    </a>
+                    <a href="#" class="service__link service__link2">
+                        <div class="service__text">RitmStyle + красочная <br> подводная фотосессия</div>
+                        <img class="" src="img/acvatp/service-2.png">
+
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Reviews-->
+<div id="reviews" class="reviews">
+    <div class="container">
+        <div class="reviews__item">
+            <div class="alltitle">
+                <h2 class="decor">Отзывы</h2>
+            </div>
+
+            <div class="reviews__slider">
+                <div class="reviews__box">
+                    <div class="reviws__name">Кира Иванова</div>
+                    <div class="reviws__text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus diam risus morbi nulla dictum. Urna mi orci gravida placerat amet, eu, aliquet facilisis aliquet. Dolor praesent nam ornare fringilla enim nibh donec sit imperdiet. Amet, diam duis eu sit et. Volutpat vestibulum a lectus sed blandit.</p>
+                        <p>Venenatis urna mattis eu enim molestie iaculis et aliquet. Velit in pellentesque vestibulum phasellus orci. Fermentum sed phasellus aliquam nulla non aenean. Quisque id nunc, mauris potenti a massa. Fermentum at elit, convallis leo dolor aliquet id elementum. Ullamcorper sociis et cum bibendum in egestas. Diam, urna, sed tempus mollis aliquam elit. Facilisi nam nulla pulvinar mauris vel lacinia venenatis. </p>
+                    </div>
+                </div>
+                <div class="reviews__box">
+                    <div class="reviws__name">Александра Дмитриева</div>
+                    <div class="reviws__text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus diam risus morbi nulla dictum. Urna mi orci gravida placerat amet, eu, aliquet facilisis aliquet. Dolor praesent nam ornare fringilla enim nibh donec sit imperdiet. Amet, diam duis eu sit et. Volutpat vestibulum a lectus sed blandit.</p>
+                        <p>Venenatis urna mattis eu enim molestie iaculis et aliquet. Velit in pellentesque vestibulum phasellus orci. Fermentum sed phasellus aliquam nulla non aenean. Quisque id nunc, mauris potenti a massa. Fermentum at elit, convallis leo dolor aliquet id elementum. Ullamcorper sociis et cum bibendum in egestas. Diam, urna, sed tempus mollis aliquam elit. Facilisi nam nulla pulvinar mauris vel lacinia venenatis. </p>
+                    </div>
+                </div>
+                <div class="reviews__box">
+                    <div class="reviws__name">Яна Жернова</div>
+                    <div class="reviws__text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus diam risus morbi nulla dictum. Urna mi orci gravida placerat amet, eu, aliquet facilisis aliquet. Dolor praesent nam ornare fringilla enim nibh donec sit imperdiet. Amet, diam duis eu sit et. Volutpat vestibulum a lectus sed blandit.</p>
+                        <p>Venenatis urna mattis eu enim molestie iaculis et aliquet. Velit in pellentesque vestibulum phasellus orci. Fermentum sed phasellus aliquam nulla non aenean. Quisque id nunc, mauris potenti a massa. Fermentum at elit, convallis leo dolor aliquet id elementum. Ullamcorper sociis et cum bibendum in egestas. Diam, urna, sed tempus mollis aliquam elit. Facilisi nam nulla pulvinar mauris vel lacinia venenatis. </p>
+                    </div>
+                </div>
+                <div class="reviews__box">
+                    <div class="reviws__name">Кира Иванова</div>
+                    <div class="reviws__text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus diam risus morbi nulla dictum. Urna mi orci gravida placerat amet, eu, aliquet facilisis aliquet. Dolor praesent nam ornare fringilla enim nibh donec sit imperdiet. Amet, diam duis eu sit et. Volutpat vestibulum a lectus sed blandit.</p>
+                        <p>Venenatis urna mattis eu enim molestie iaculis et aliquet. Velit in pellentesque vestibulum phasellus orci. Fermentum sed phasellus aliquam nulla non aenean. Quisque id nunc, mauris potenti a massa. Fermentum at elit, convallis leo dolor aliquet id elementum. Ullamcorper sociis et cum bibendum in egestas. Diam, urna, sed tempus mollis aliquam elit. Facilisi nam nulla pulvinar mauris vel lacinia venenatis. </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+     </div>
+</div>
+
+<!--Info-->
+<div id="info" class="info">
+    <div class="container">
+        <div class="alltitle decor-wrapper">
+            <h2 class="info__title decor">Об RitmStyle</h2>
+        </div>
+        <div class="info__item">
+            <div class="info__content">
+                <div class="info__servis">RitmStyle массаж</div>
+                <div class="info__text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in purus, sed tellus eget mattis nibh quam. Eu ornare nunc, id est. Erat consectetur etiam a sit diam in imperdiet amet. Diam nisl, ipsum suscipit amet. Eleifend amet habitasse proin quis adipiscing.</p>
+                    <p>Nisl convallis mauris in consequat. Sit ac vitae posuere maecenas dictumst quam. Felis amet diam, non augue massa. Egestas molestie lobortis rhoncus, elit nulla nisl. Habitant tortor at tempor.</p>
+                </div>
+            </div>
+            <div class="info__photo">
+                <img src="img/acvatp/info-1.png" alt="">
+            </div>
+            <div class="info__photo2">
+                <img src="img/acvatp/info-2.png" alt="">
+            </div>
+            <div class="info__content2">
+                <div class="info__servis">RitmStyle гидротерапия</div>
+                <div class="info__text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu cras quis ac a non ut viverra turpis eget. Hendrerit quis pulvinar massa ipsum sem. Donec posuere nulla enim non neque etiam. Eros arcu, pulvinar penatibus luctus ridiculus sagittis vel nunc hac. Nisi, diam tincidunt dui viverra. Eget quis ultricies sem nunc risus senectus luctus ultricies. Enim feugiat pharetra pharetra et.</p>
+                    <p>Pulvinar arcu at morbi posuere cursus. Fermentum est sit enim velit ornare molestie. Ipsum nisi id sed tempor elementum. Mi nunc eget pellentesque ipsum. Suspendisse risus a id vel massa tincidunt. Hendrerit blandit in augue vel mi quam magna egestas. Fringilla ac lacus viverra ullamcorper leo, enim vitae id aliquam. Magna sed tristique tellus enim, netus tempor at elit dui. Ullamcorper hendrerit feugiat libero tellus diam egestas dui tellus odio.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Price-->
+<div class="price">
+    <div class="container">
+        <div class="alltitle decor-wrapper">
+            <h2 class="price__title decor">Стоимость сеансов</h2>
+        </div>
+        <div class="price__item">
+            <div class="price__text">
+                <pre class="price__name">RitmStyle с погружением          <span class="price__sum">1000р.</span></pre>
+                <pre class="price__name">Абонемент на RitmStyle           <span class="price__sum">5500р.</span></pre>
+                <pre class="price__name">RitmStyle для пар                <span class="price__sum">6000р.</span></pre>
+                <pre class="price__name">RitmStyle для беременных         <span class="price__sum">13500р.</span></pre>
+                <pre class="price__name">RitmStyle +  фотосессия          <span class="price__sum">11500р.</span></pre>
+            </div>
+            <div class="price__photo">
+                <img src="img/acvatp/price-1.png">
+                <div class="price__photoname">Подарочный сертификат </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Contacts-->
+<div id="contacts" class="contacts">
+    <div class="container">
+        <div class="contacts__item">
+            <div id="contacts__map" class="contacts__maps"></div>
+            <div class="contacts__content">
+            <div class="contacts__box">
+                <h4 class="contacts__name">Бассейн WorkClass</h4>
+                <div class="contacts__text contacts__adres">Невский 140</div>
+                <div class="contacts__text contacts__metro">м. Спасская</div>
+                <div class="contacts__text contacts__date">Запись по договоренности</div>
+                <a href="#">
+                    <div class="contacts__btn">Записаться на сеанс</div>
+                </a>
+            </div>
+            <div class="contacts__box cnt_box">
+                <h4 class="contacts__name">Бассейн "На Гороховой"</h4>
+                <div class="contacts__text contacts__adres">3-й проезд Иванова</div>
+                <div class="contacts__text contacts__metro">м. Крестовский остров</div>
+                <div class="contacts__text contacts__date">Запись по договоренности</div>
+                <a href="#">
+                    <div class="contacts__btn">Записаться на сеанс</div>
+                </a>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Scripts -->
+<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="libs/slick-1.8.1/slick/slick.min.js"></script>
+<script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js" integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ==" crossorigin=""></script>
+<script src="./scripts.js"></script>
+</body>
+</html>
